@@ -1,27 +1,46 @@
-html{
+*{
     background: linear-gradient(lightpink,lightblue);
     background-repeat: no-repeat;
     background-attachment:fixed
+   
 
 }
-    
+*{
+    box-sizing: border-box;
+}
+
 
 h1{
     color:black;
     text-align: center;
     font-style: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
+    font-size: large; 
+    
 }
 p{
+   font-family: Arial, sans-serif;
+    background-color:white;
+    color:black;
+    line-height: 1.6;
+    margin: 60px 100px 50px    
+}
+p.p1{
     font-style: normal;
     font-family:'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 10px;
     line-height:normal
 }
 img{
     align-items: center;
     size-adjust: 40px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #d5dce3;
+    border-radius: 6px;
+    
 
 }
 header{
@@ -31,11 +50,18 @@ header{
     font-size:small
 
 }
+footer a {
+     color:lightcoral;
+    font-family:'Times New Roman', Times, serif;
+    font-style: initial;
+    
+}
 
-a{
+nav a{
     color:lightcoral;
     font-family:'Times New Roman', Times, serif;
     font-style: initial;
+    
 }
 a:hover{
     text-decoration: underline;
@@ -43,14 +69,36 @@ a:hover{
 
 }
 
-h1.r{
+h2.f{
     text-align: center;
     color: black;
     font-style: italic;
 }
 
-h2.o{
+h2.s{
     text-align: center;
     color: black;
     font-style: italic;
+}
+
+ul.card {
+    width: 20%;
+    padding: 30px;
+    border: 1px solid #333;
+    margin: 20px 10px auto;
+}
+
+ul.list{
+    width: 20%;
+    padding: 15px;
+    border: 1px solid #333;
+    margin: 20px 10px auto;
+
+}
+
+@media (max-width: 600px) {
+    *{
+        width: 100%;
+        padding: 15px;
+    }
 }
